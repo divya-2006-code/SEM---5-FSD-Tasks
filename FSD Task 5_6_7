@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wonders of Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-color:#f7f6ff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="color:#2d0c8c;
+               font-size:60px;
+               text-align:center;
+               font-family:Georgia;">
+        🌌 Wonders of Universe
+    </h1>
+
+    <p style="font-size:24px;
+              color:#333366;
+              text-align:center;">
+        The universe is a vast and mysterious place filled with stars,
+        planets, galaxies and cosmic wonders.
+    </p>
+
+    <h2>✨ Marvels Found in the Universe ✨</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="star.jpg" alt="Star">
+            <h3>⭐ Stars</h3>
+            <p>
+                Stars are giant glowing balls of hot gases that produce light and energy.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="planet.jpg" alt="Planet">
+            <h3>🪐 Planets</h3>
+            <p>
+                Planets revolve around stars and come in different sizes and compositions.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="galaxy.jpg" alt="Galaxy">
+            <h3>🌌 Galaxies</h3>
+            <p>
+                Galaxies contain billions of stars, dust and gases.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="comet.jpg" alt="Comet">
+            <h3>☄️ Comets</h3>
+            <p>
+                Comets travel through space and develop glowing tails near the Sun.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="blackhole.jpg" alt="Black Hole">
+            <h3>🕳️ Black Holes</h3>
+            <p>
+                Black holes have extremely strong gravity that even light cannot escape.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="fact-box">
+        <h2>💡 Did You Know?</h2>
+
+        <p>
+            Light from some distant galaxies takes millions of years
+            to reach Earth. When we observe those galaxies, we are
+            actually looking into the past.
+        </p>
+    </div>
+
+    <footer>
+        ✨ © 2026 Wonders of Universe | Keep Exploring the Cosmos ✨
+    </footer>
+
+</body>
+</html>
