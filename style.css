@@ -1,0 +1,54 @@
+body{
+    font-family:Verdana, sans-serif;
+    margin:20px;
+}
+
+h2{
+    text-align:center;
+    color:#4b0082;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.card{
+    width:180px;
+    background:white;
+    border:2px solid #d6d6ff;
+    border-radius:15px;
+    padding:10px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:120px;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#2d0c8c;
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+}
+
+.fact-box{
+    margin-top:30px;
+    background:#efe8ff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    color:#555;
+}
