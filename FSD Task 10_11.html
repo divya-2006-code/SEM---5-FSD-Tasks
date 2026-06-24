@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Portal</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #87CEEB, #E0F7FA);
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container{
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px gray;
+        }
+
+        h2{
+            color: #1565C0;
+        }
+
+        input{
+            width: 80%;
+            padding: 12px;
+            margin: 10px;
+            font-size: 16px;
+            border: 2px solid #90CAF9;
+            border-radius: 8px;
+        }
+
+        button{
+            background-color: #1976D2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #0D47A1;
+        }
+
+        #result{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #ticket{
+            display: none;
+            margin-top: 20px;
+            background-color: #E3F2FD;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>✈ Travel Booking Portal</h2>
+
+    <input
+        type="text"
+        id="traveler"
+        placeholder="Enter Traveler Name">
+
+    <br>
+
+    <input
+        type="text"
+        id="destination"
+        placeholder="Enter Destination">
+
+    <br>
+
+    <button id="bookBtn">
+        Book Trip
+    </button>
+
+    <p id="result">Waiting for Booking...</p>
+
+    <div id="ticket">
+        <h3>🎫 Booking Confirmed</h3>
+        <p id="details"></p>
+    </div>
+
+</div>
+
+<script>
+
+let button =
+document.getElementById("bookBtn");
+
+button.addEventListener("click", function(){
+
+    let name =
+    document.getElementById("traveler").value;
+
+    let place =
+    document.getElementById("destination").value;
+
+    let result =
+    document.getElementById("result");
+
+    let ticket =
+    document.getElementById("ticket");
+
+    let details =
+    document.getElementById("details");
+
+    if(name.trim() === "" || place.trim() === "")
+    {
+        result.innerText =
+        "❌ Please fill all fields.";
+
+        result.style.color = "red";
+
+        ticket.style.display = "none";
+    }
+    else
+    {
+        result.innerText =
+        "✅ Booking Successful!";
+
+        result.style.color = "green";
+
+        details.innerText =
+        "Traveler: " + name +
+        " | Destination: " + place;
+
+        ticket.style.display = "block";
+
+        document.body.style.background =
+        "linear-gradient(to right, #C8E6C9, #E8F5E9)";
+    }
+
+});
+
+</script>
+
+</body>
+</html>
