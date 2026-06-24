@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Alert Message</title>
+
+    <style>
+        body{
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            transition: 0.5s;
+        }
+
+        h2{
+            color: darkgreen;
+        }
+
+        p{
+            font-size: 20px;
+            color: navy;
+            font-weight: bold;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="heading">Interactive Alert Message</h2>
+
+    <p id="message">
+        Click the button to see the changes.
+    </p>
+
+    <button onclick="showAlert()">
+        Click Me
+    </button>
+
+    <script>
+        function showAlert()
+        {
+            alert("Welcome! Button Clicked Successfully.");
+
+            document.body.style.backgroundColor = "Lavender";
+
+            document.getElementById("heading").style.color = "DarkRed";
+
+            let msg = document.getElementById("message");
+            msg.innerText = "Text and colors changed successfully!";
+            msg.style.color = "Blue";
+            msg.style.fontSize = "28px";
+        }
+    </script>
+
+</body>
+</html>
